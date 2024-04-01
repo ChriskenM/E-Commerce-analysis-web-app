@@ -9,7 +9,7 @@ const LoginForm: React.FC = () => {
   const handleLogin = async () => {
     // login logic
     try {
-      const response = await axios.post("/login", {
+      const response = await axios.post("/users", {
         name,
         password,
       });
