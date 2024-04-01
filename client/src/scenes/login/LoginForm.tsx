@@ -3,14 +3,14 @@ import axios from "axios";
 import "../../index.css";
 
 const LoginForm: React.FC = () => {
-  const [username, setUsername] = useState("");
+  const [name, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
     // login logic
     try {
       const response = await axios.post("/login", {
-        username,
+        name,
         password,
       });
       console.log("Login successful:", response.data);
@@ -25,7 +25,7 @@ const LoginForm: React.FC = () => {
       <input
         type="text"
         placeholder="Username"
-        value={username}
+        value={name}
         onChange={(e) => setUsername(e.target.value)}
         className="login-input"
       />

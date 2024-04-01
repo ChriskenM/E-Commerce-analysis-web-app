@@ -3,7 +3,7 @@ import axios from "axios";
 import "../../index.css";
 
 const RegisterForm: React.FC = () => {
-  const [username, setUsername] = useState("");
+  const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
 
@@ -11,7 +11,7 @@ const RegisterForm: React.FC = () => {
     // registration logic
     try {
       const response = await axios.post("/register", {
-        username,
+        name,
         email,
         password,
         date: new Date().toISOString(), //capture registration date
@@ -30,8 +30,8 @@ const RegisterForm: React.FC = () => {
       <input
         type="text"
         placeholder="Username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
+        value={name}
+        onChange={(e) => setName(e.target.value)}
         className="register-input"
       />
       <input

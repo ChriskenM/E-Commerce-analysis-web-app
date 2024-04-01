@@ -6,10 +6,10 @@ import User from "../models/User.js";
 const router = express.Router();
 
 router.post("/login", async (req, res) => {
-  const { email, password } = req.body;
+  const { name, password } = req.body;
 
   try {
-    let user = await User.findOne({ email });
+    let user = await User.findOne({ name });
 
     if (!user) {
       return res.status(400).json({ msg: "Invalid credentials" });
