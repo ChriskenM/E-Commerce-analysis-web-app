@@ -6,9 +6,9 @@ https://analytics-web-app.my.canva.site/landing-page
 
 <h4> Overview </h4>
 
-The E-Commerce Analytics Web App is a comprehensive dashboard that provides businesses with actionable insights into their online sales.
-Has a Prediction page which uses simple **ML** algorithms to offer useful predictive insights to help in business decision making.
-Built using modern web technologies, this project aims to help e-commerce businesses optimize their strategies and improve customer engagement.
+- The E-Commerce Analytics Web App is a comprehensive dashboard that provides businesses with actionable insights into their online sales.
+- Has a Prediction page which uses simple **ML** algorithms to offer useful predictive insights to help in business decision making.
+- Built using modern web technologies, this project aims to help e-commerce businesses optimize their strategies and improve customer engagement.
 
 <h4> Features: </h4>
 
@@ -26,7 +26,7 @@ Built using modern web technologies, this project aims to help e-commerce busine
 <h4> Installation </h4>
 
 - Clone the repository:
-- bash
+  - bash
 
 ```
   git clone
@@ -45,8 +45,8 @@ npm install
 ```
 
 - Usage
-- Start the backend server:
-- remember to create a environment file linking to your database.
+  - Start the backend server:
+  - remember to create a environment file linking to your database.
 
 ```
 npm run dev
