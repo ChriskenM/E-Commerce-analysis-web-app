@@ -53,8 +53,9 @@ This project is part of the curriculum at ALX School.
 Data sources provided by Edroh.
 
 <h4> Contributors </h4>
-+ ChrisKen Mutuma
-+ <[Linkedin](https://www.linkedin.com/in/mutuma-chris-520355270)>
+
+- ChrisKen Mutuma
+- <[Linkedin](https://www.linkedin.com/in/mutuma-chris-520355270)>
 
 <h4> The Project Tree </h4>
 ```
