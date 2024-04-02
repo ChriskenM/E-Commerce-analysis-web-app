@@ -6,42 +6,40 @@ https://analytics-web-app.my.canva.site/landing-page
 
 <h4> Overview </h4>
 
-The E-Commerce Analytics Web App is a comprehensive dashboard that provides businesses with actionable insights into their online sales, customer demographics, and website traffic. Built using modern web technologies, this project aims to help e-commerce businesses optimize their strategies and improve customer engagement.
+The E-Commerce Analytics Web App is a comprehensive dashboard that provides businesses with actionable insights into their online sales.
+Has a Prediction page which uses simple **ML** algorithms to offer useful predictive insights to help in business decision making.
+Built using modern web technologies, this project aims to help e-commerce businesses optimize their strategies and improve customer engagement.
 
 <h4> Features: </h4>
 
-Dashboard: Visualize sales performance, customer behavior, and website traffic statistics.
-Predictions: Utilize predictive analytics to forecast future trends and identify potential opportunities.
-User Profile: Manage user accounts and access control for secure data handling.
-Data Handling: Efficiently handle large datasets, including CSV file uploads and database integration.
-Installation
-Clone the repository:
+- Dashboard: Visualize sales performance, customer behavior, and website traffic statistics.
+- Predictions: Utilize predictive analytics to forecast future trends and identify potential opportunities.
+- Data Handling: Efficiently handle large datasets, including CSV file uploads and database integration.
 
-bash
-Copy code
-git clone
-Navigate to the project directory:
+- Installation
+  Clone the repository:
 
-bash
-Copy code
+- bash
+  Copy code
+  git clone
+- Navigate to the project directory:
+
 cd E-Commerce-Analysis-Web-App
-Install dependencies for frontend and backend:
 
-bash
-Copy code
-npm install
-Usage
-Start the backend server:
+- Install dependencies for frontend and backend:
+  npm install
 
-bash
-Copy code
-npm run server
-Start the frontend development server:
+- Usage
+- Start the backend server:
+- remember to create a environment file linking to your database.
 
-bash
-Copy code
-npm start
-Access the web app in your browser.
+npm run dev
+
+- Start the frontend development server:
+
+npm run dev
+
+- Access the web app in your browser.
 
 <h4> Technologies Used: </h4>
 
