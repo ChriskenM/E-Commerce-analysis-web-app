@@ -16,28 +16,40 @@ Built using modern web technologies, this project aims to help e-commerce busine
 - Predictions: Utilize predictive analytics to forecast future trends and identify potential opportunities.
 - Data Handling: Efficiently handle large datasets, including CSV file uploads and database integration.
 
-- Installation
-  Clone the repository:
+<h4> Installation </h4>
 
+- Clone the repository:
 - bash
-  Copy code
+
+```
   git clone
+```
+
 - Navigate to the project directory:
 
+```
 cd E-Commerce-Analysis-Web-App
+```
 
 - Install dependencies for frontend and backend:
-  npm install
+
+```
+npm install
+```
 
 - Usage
 - Start the backend server:
 - remember to create a environment file linking to your database.
 
+```
 npm run dev
+```
 
 - Start the frontend development server:
 
+```
 npm run dev
+```
 
 - Access the web app in your browser.
 
@@ -55,7 +67,8 @@ Data sources provided by Edroh.
 <h4> Contributors </h4>
 
 - ChrisKen Mutuma
-- <[Linkedin](https://www.linkedin.com/in/mutuma-chris-520355270)>
+  - <[Linkedin](https://www.linkedin.com/in/mutuma-chris-520355270)>
+  - <[Twitter](https://twitter.com/MutumaChrisken)>
 
 <h4> The Project Tree </h4>
 ```
