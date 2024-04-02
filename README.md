@@ -55,14 +55,14 @@ npm run dev
 
 <h4> Technologies Used: </h4>
 
-Frontend: React, HTML, CSS
-Backend: Node.js, Express.js
-Database: MongoDB
-Analytics: regression.js
+- Frontend: React, HTML, CSS, MaterialUI, Recharts
+- Backend: Node.js, Express.js, mongoose
+- Database: MongoDB
+- Analytics: regression.js
 
 <h4> Credits </h4>
 This project is part of the curriculum at ALX School.
-Data sources provided by Edroh.
+Mock Data source provided by Edroh.
 
 <h4> Contributors </h4>
 
