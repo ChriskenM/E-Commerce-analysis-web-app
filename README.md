@@ -78,7 +78,7 @@ npm run dev
 
 <h4> Credits </h4>
 
-This project is part of the curriculum at <[ALX](https://www.alxafrica.com/)> School.
+The curriculum at <[ALX](https://www.alxafrica.com/)> School.
 Mock Data source provided by Edroh.
 
 <h4> Contributors </h4>
