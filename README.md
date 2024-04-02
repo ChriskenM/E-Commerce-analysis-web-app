@@ -16,6 +16,13 @@ Built using modern web technologies, this project aims to help e-commerce busine
 - Predictions: Utilize predictive analytics to forecast future trends and identify potential opportunities.
 - Data Handling: Efficiently handle large datasets, including CSV file uploads and database integration.
 
+<h4> Technologies Used: </h4>
+
+- Frontend: React, HTML, CSS, MaterialUI, Recharts
+- Backend: Node.js, Express.js, mongoose
+- Database: MongoDB
+- Analytics: regression.js
+
 <h4> Installation </h4>
 
 - Clone the repository:
@@ -52,13 +59,6 @@ npm run dev
 ```
 
 - Access the web app in your browser.
-
-<h4> Technologies Used: </h4>
-
-- Frontend: React, HTML, CSS, MaterialUI, Recharts
-- Backend: Node.js, Express.js, mongoose
-- Database: MongoDB
-- Analytics: regression.js
 
 <h4> Credits </h4>
 This project is part of the curriculum at ALX School.
