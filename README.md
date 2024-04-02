@@ -1,4 +1,65 @@
+<h2> landing page link </h2>
 
+https://analytics-web-app.my.canva.site/landing-page
+
+<h2> E-Commerce Analytics Web App </h2>
+
+<h4> Overview </h4>
+
+The E-Commerce Analytics Web App is a comprehensive dashboard that provides businesses with actionable insights into their online sales, customer demographics, and website traffic. Built using modern web technologies, this project aims to help e-commerce businesses optimize their strategies and improve customer engagement.
+
+<h4> Features: </h4>
+
+Dashboard: Visualize sales performance, customer behavior, and website traffic statistics.
+Predictions: Utilize predictive analytics to forecast future trends and identify potential opportunities.
+User Profile: Manage user accounts and access control for secure data handling.
+Data Handling: Efficiently handle large datasets, including CSV file uploads and database integration.
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone
+Navigate to the project directory:
+
+bash
+Copy code
+cd E-Commerce-Analysis-Web-App
+Install dependencies for frontend and backend:
+
+bash
+Copy code
+npm install
+Usage
+Start the backend server:
+
+bash
+Copy code
+npm run server
+Start the frontend development server:
+
+bash
+Copy code
+npm start
+Access the web app in your browser.
+
+<h4> Technologies Used: </h4>
+
+Frontend: React, HTML, CSS
+Backend: Node.js, Express.js
+Database: MongoDB
+Analytics: regression.js
+
+Credits
+This project is part of the curriculum at ALX School.
+Data sources provided by Edroh.
+Contributors
+Your Name
+Other Contributors
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+<h4> The Project Tree </h4>
 ```
 E-Commerce-analysis-web-app
 ├─ client
@@ -62,5 +123,7 @@ E-Commerce-analysis-web-app
       ├─ product.js
       ├─ register.js
       └─ transaction.js
+
+```
 
 ```
