@@ -48,14 +48,12 @@ Backend: Node.js, Express.js
 Database: MongoDB
 Analytics: regression.js
 
-Credits
+<h4> Credits </h4>
 This project is part of the curriculum at ALX School.
 Data sources provided by Edroh.
-Contributors
-Your Name
-Other Contributors
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
+<h4> Contributors </h4>
+ChrisKen Mutuma
 
 <h4> The Project Tree </h4>
 ```
