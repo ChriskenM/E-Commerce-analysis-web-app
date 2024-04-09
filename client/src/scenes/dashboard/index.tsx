@@ -3,6 +3,7 @@ import Row1 from "./Row1";
 import Row2 from "./Row2";
 import Row3 from "./Row3";
 
+// Template for grid layout on large screens
 const gridTemplateLargeScreens = `
   "a b c"
   "a b c"
@@ -15,6 +16,8 @@ const gridTemplateLargeScreens = `
   "g h j"
   "g h j"
 `;
+
+// Template for grid layout on small screens
 const gridTemplateSmallScreens = `
   "a"
   "a"
@@ -49,8 +52,11 @@ const gridTemplateSmallScreens = `
 `;
 
 const Dashboard = () => {
+  // Using useMediaQuery hook to determine screen size
   const isAboveMediumScreens = useMediaQuery("(min-width: 1200px)");
+  // Returning JSX representing the Dashboard
   return (
+    // Container for the entire dashboard
     <Box
       width="100%"
       height="100%"
@@ -77,4 +83,5 @@ const Dashboard = () => {
   );
 };
 
+// Exporting Dashboard component for external use.
 export default Dashboard;

@@ -1,3 +1,26 @@
+// contains configuration options for TypeScript compiler.
+/**
+Paths: Custom paths for module resolution to simplify import statements.
+Target: Specifies the ECMAScript version to target during compilation.
+Use Define For Class Fields: Enables the use of 'define' for class fields.
+Lib: Defines the standard library typings to include.
+AllowJs: Disables JavaScript files compilation.
+SkipLibCheck: Skips type checking of declaration files.
+EsModuleInterop: Disables ES module interoperability.
+AllowSyntheticDefaultImports: Allows synthetic default imports.
+Strict: Enables strict type checking mode.
+ForceConsistentCasingInFileNames: Enforces consistent file casing.
+Module: Specifies the module system (ESNext in this case).
+ModuleResolution: Specifies the module resolution strategy (Node).
+ResolveJsonModule: Allows importing JSON files as modules.
+IsolatedModules: Treats each file as a separate module.
+NoEmit: Disables emitting output files.
+JSX: Enables JSX syntax for React.
+Types: Specifies the type definitions to include.
+Include: Lists the files and directories to include for compilation.
+References: References another TypeScript configuration file.
+*/
+
 {
   "compilerOptions": {
     "paths": {

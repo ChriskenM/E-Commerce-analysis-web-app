@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import axios from "axios";
 import "../../index.css";
 
+// Defines RegisterForm functional component
 const RegisterForm: React.FC = () => {
+  // Defines state variables for name, email, and password
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
@@ -10,6 +12,7 @@ const RegisterForm: React.FC = () => {
   const handleRegister = async () => {
     // registration logic
     try {
+      // Sends a POST request to the server to register a new user
       const response = await axios.post("/register", {
         name,
         email,
@@ -23,6 +26,7 @@ const RegisterForm: React.FC = () => {
     }
   };
 
+  // Displays the register from with name, email and password
   return (
     <div className="register-form">
       {" "}
@@ -55,4 +59,5 @@ const RegisterForm: React.FC = () => {
   );
 };
 
+// exports registerform
 export default RegisterForm;

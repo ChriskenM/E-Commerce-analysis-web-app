@@ -2,6 +2,7 @@ import { Box, Typography, useTheme } from "@mui/material";
 import React from "react";
 import FlexBetween from "./FlexBetween";
 
+// Defining the type for the props this component will have
 type Props = {
   title: string;
   sideText: string;
@@ -9,9 +10,12 @@ type Props = {
   icon?: React.ReactNode;
 };
 
+// Definition for the BoxHeader
 const BoxHeader = ({ icon, title, subtitle, sideText }: Props) => {
   const { palette } = useTheme();
+  // Returning the JSX representing the BoxHeader component
   return (
+    // Using flexbetween to give specific styling.
     <FlexBetween color={palette.grey[400]} margin="1.5rem 1rem 0 1rem">
       <FlexBetween>
         {icon}
@@ -29,4 +33,5 @@ const BoxHeader = ({ icon, title, subtitle, sideText }: Props) => {
   );
 };
 
+// Exporting boxheader for use in other files.
 export default BoxHeader;

@@ -7,12 +7,16 @@ import { configureStore } from "@reduxjs/toolkit";
 import { setupListeners } from "@reduxjs/toolkit/query";
 import { api } from "@/state/api";
 
+// Creates Redux store with API slice reducer and middleware
 export const store = configureStore({
   reducer: { [api.reducerPath]: api.reducer },
   middleware: (getDefault) => getDefault().concat(api.middleware),
 });
+
+// Sets up listeners for automatic polling and cache management
 setupListeners(store.dispatch);
 
+// Rends the application root component wrapped in Redux Provider
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <Provider store={store}>
     <App />

@@ -1,5 +1,15 @@
+/*
+  This CSS file defines styles for the application, including font imports, scrollbar styles,
+  and form styles for login and registration.
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
+/*  
+  - Sets the height and width of the HTML, body, and #root elements to 100%.
+  - Applies the Inter font family as the default font for the entire application.
+  - Sets the background color of the entire application to #1f2026.
+ */
 html,
 body,
 #root,
@@ -10,6 +20,11 @@ body,
   background-color: #1f2026;
 }
 
+/* 
+  - Defines styles for the custom scrollbar appearance using webkit-specific pseudo-elements.
+  - Tracks, thumbs, and hover effects are styled to match the application's color scheme.
+
+ */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -26,8 +41,14 @@ body,
   background: #2a2b2f;
 }
 
-/* Add these styles to your existing CSS file */
+/* 
+  - Styles for the login form container, input fields, and button.
+  - The form is displayed as a flex container with column direction and 1rem gap between elements.
+  - Input fields have padding, border, and border-radius applied.
+  - The login button has padding, border-radius, background color, and text color.
+  - Hover styles are applied to the login button to change the background color on hover.
 
+*/
 .login-form {
   display: flex;
   flex-direction: column;

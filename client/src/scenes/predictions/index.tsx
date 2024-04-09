@@ -15,23 +15,32 @@ import {
   YAxis,
 } from "recharts";
 import regression, { DataPoint } from "regression";
-
+// Define the Predictions component
 const Predictions = () => {
+  /**
+   * Destructuring the palette object from useTheme hook
+   * State for managing predictions visibility
+   * Fetching data using useGetKpisQuery hook
+   */
   const { palette } = useTheme();
   const [isPredictions, setIsPredictions] = useState(false);
   const { data: kpiData } = useGetKpisQuery();
 
+  // Formatted data for plotting
   const formattedData = useMemo(() => {
     if (!kpiData) return [];
     const monthData = kpiData[0].monthlyData;
 
+    // Formats data as array of [x, y] pairs for regression analysis
     const formatted: Array<DataPoint> = monthData.map(
       ({ revenue }, i: number) => {
         return [i, revenue];
       }
     );
+    // Computes regression line
     const regressionLine = regression.linear(formatted);
 
+    // Map data for plotting including actual revenue, regression line, and predicted revenue
     return monthData.map(({ month, revenue }, i: number) => {
       return {
         name: month,
@@ -118,4 +127,5 @@ const Predictions = () => {
   );
 };
 
+// Export the Predictions component
 export default Predictions;

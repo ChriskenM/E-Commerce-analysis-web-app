@@ -18,10 +18,13 @@ import {
   Area,
 } from "recharts";
 
+// Represents row1 of the dashboard.
 const Row1 = () => {
   const { palette } = useTheme();
+  // Fetching data using useGetKpisQuery hook
   const { data } = useGetKpisQuery();
 
+  // Optimization of data for revenue(cache)
   const revenue = useMemo(() => {
     return (
       data &&
@@ -34,6 +37,7 @@ const Row1 = () => {
     );
   }, [data]);
 
+  // Optimization of data for expenses(cache)
   const revenueExpenses = useMemo(() => {
     return (
       data &&
@@ -47,6 +51,7 @@ const Row1 = () => {
     );
   }, [data]);
 
+  // Optimization of data for Profit(cache)
   const revenueProfit = useMemo(() => {
     return (
       data &&
@@ -60,6 +65,7 @@ const Row1 = () => {
     );
   }, [data]);
 
+  // Rendering the dashboard rows using DashboardBox components, each containing a BoxHeader and a chart
   return (
     <>
       <DashboardBox gridArea="a">
@@ -249,4 +255,5 @@ const Row1 = () => {
   );
 };
 
+// Exporting the Row1 for external use.
 export default Row1;

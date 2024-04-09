@@ -36,6 +36,7 @@ app.use("/register", registerRoutes);
 
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 9000;
+// Connect to MongoDB using the provided connection URL
 mongoose
   .connect(process.env.MONGO_URL, {
     //useMongoClient: true,

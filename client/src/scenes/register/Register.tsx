@@ -2,6 +2,7 @@ import React from "react";
 import RegisterForm from "./RegisterForm";
 import { Box, Typography } from "@mui/material";
 
+// Defines the Register functional component
 const Register: React.FC = () => {
   return (
     <div>
@@ -15,4 +16,5 @@ const Register: React.FC = () => {
   );
 };
 
+// Exports the Register component
 export default Register;

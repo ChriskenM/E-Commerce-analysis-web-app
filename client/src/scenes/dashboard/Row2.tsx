@@ -20,17 +20,24 @@ import {
   ZAxis,
 } from "recharts";
 
+/**
+ *  Pie data used for rendering PieChart components.
+ *Each object represents a segment in the pie chart.
+ */
 const pieData = [
   { name: "Group A", value: 600 },
   { name: "Group B", value: 400 },
 ];
 
+// Row2 component displays various charts related to operational and product data
 const Row2 = () => {
   const { palette } = useTheme();
   const pieColors = [palette.primary[800], palette.primary[300]];
+  // Data fetching for operational and product information
   const { data: operationalData } = useGetKpisQuery();
   const { data: productData } = useGetProductsQuery();
 
+  // Optimization of data for Operationalexpenses(cache)
   const operationalExpenses = useMemo(() => {
     return (
       operationalData &&
@@ -46,6 +53,7 @@ const Row2 = () => {
     );
   }, [operationalData]);
 
+  // Optimization of data for Productexpense(cache)
   const productExpenseData = useMemo(() => {
     return (
       productData &&
@@ -201,4 +209,5 @@ const Row2 = () => {
   );
 };
 
+// Export row2 for external use.
 export default Row2;

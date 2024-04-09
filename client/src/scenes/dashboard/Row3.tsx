@@ -11,14 +11,17 @@ import { DataGrid, GridCellParams } from "@mui/x-data-grid";
 import React, { useMemo } from "react";
 import { Cell, Pie, PieChart } from "recharts";
 
+// represents the third row in the dashboard
 const Row3 = () => {
   const { palette } = useTheme();
   const pieColors = [palette.primary[800], palette.primary[500]];
 
+  // Fetch data using custom hooks from state API
   const { data: kpiData } = useGetKpisQuery();
   const { data: productData } = useGetProductsQuery();
   const { data: transactionData } = useGetTransactionsQuery();
 
+  // Computation for pie chart data based on KPI data
   const pieChartData = useMemo(() => {
     if (kpiData) {
       const totalExpenses = kpiData[0].totalExpenses;
@@ -39,6 +42,7 @@ const Row3 = () => {
     }
   }, [kpiData]);
 
+  // Defines columns for the product and transaction data tables
   const productColumns = [
     {
       field: "_id",
@@ -85,6 +89,7 @@ const Row3 = () => {
     },
   ];
 
+  // Returns JSX representing the third row in the dashboard
   return (
     <>
       <DashboardBox gridArea="g">
@@ -207,4 +212,5 @@ const Row3 = () => {
   );
 };
 
+// Exports row 3 for external use
 export default Row3;

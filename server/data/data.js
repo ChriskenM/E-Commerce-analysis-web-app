@@ -1,3 +1,5 @@
+// The mock data used in the first version.
+
 export const users = [
   {
     name: "John Doe",

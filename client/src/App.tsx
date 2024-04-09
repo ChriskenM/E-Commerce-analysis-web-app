@@ -11,7 +11,9 @@ import Login from "@/scenes/login/Login";
 import Register from "@/scenes/register/Register";
 
 function App() {
+  // Creates a theme based on theme settings
   const theme = useMemo(() => createTheme(themeSettings), []);
+  // Displays the navbar top right and allows for navigation in between pages.
   return (
     <div className="app">
       <BrowserRouter>
@@ -32,4 +34,5 @@ function App() {
   );
 }
 
+// Exports the app componet for external use
 export default App;

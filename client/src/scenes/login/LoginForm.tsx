@@ -3,14 +3,16 @@ import axios from "axios";
 import "../../index.css";
 
 const LoginForm: React.FC = () => {
+  // Define state variables to store username and password
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
     // login logic
     try {
+      // Send a POST request to the server with username and password
       const response = await axios.post(
-        `${import.meta.env.VITE_BASE_URL}/users`,
+        `${import.meta.env.VITE_BASE_URL}/users`, // Endpoint URL
         {
           params: {
             name,
@@ -24,7 +26,7 @@ const LoginForm: React.FC = () => {
       console.error("Login failed:", error.message);
     }
   };
-
+  // Displays the login form containing input fields for username and password
   return (
     <div className="login-form">
       <input
@@ -48,4 +50,5 @@ const LoginForm: React.FC = () => {
   );
 };
 
+// Exports the login form
 export default LoginForm;

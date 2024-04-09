@@ -5,12 +5,16 @@ import SpaIcon from "@mui/icons-material/Spa";
 import { Box, Typography, useTheme } from "@mui/material";
 import FlexBetween from "@/components/FlexBetween";
 
+// Defines the type of props for the Navba
 type Props = {};
 
+// Defines the Navbar component
 const Navbar = (props: Props) => {
   const { palette } = useTheme();
+  // Defines state to manage the selected navigation item
   const [selected, setSelected] = useState("dashboard");
   return (
+    // Flex container creates space between items and margin and padding
     <FlexBetween mb="0.25rem" p="0.5rem 0rem" color={palette.grey[300]}>
       {/* LEFT SIDE */}
       <FlexBetween gap="0.75rem">
@@ -79,4 +83,5 @@ const Navbar = (props: Props) => {
   );
 };
 
+// Exports the Navbar
 export default Navbar;
